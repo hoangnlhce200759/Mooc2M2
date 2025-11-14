@@ -1,15 +1,17 @@
+
 /* Global page styles */
 body {
   font-family: Arial, sans-serif; /* Font family requirement */
   font-size: 16px; /* Base font size */
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 /* Header styling */
 header {
-  background-color: #222; /* Header background */
-  color: white;
+  background-color: #ffffff; /* Header background */
+  color: rgb(0, 0, 0);
   padding: 20px;
   text-align: center;
 }
@@ -18,6 +20,8 @@ header {
 nav {
   background-color: #ddd; /* Nav background */
   padding: 10px;
+  display: inline-block;
+  width: 80%;
 }
 
 /* Main content styling */
@@ -35,18 +39,17 @@ footer {
   text-align: center;
 }
 
-/* List items styling */
-li {
-  display: inline-block; /* Items inline horizontally */
-  width: 30%; /* Better layout across nav/boxes */
+/* li {
+  display: inline-block;
+  width: 30%;
   margin: 5px;
-}
+} */
 
 /* Header text styling */
 h1 {
   text-align: center; /* Center titles */
   font-family: Verdana, sans-serif; /* Title font */
-  color: teal; /* Title color */
+  color: rgb(0, 0, 0); /* Title color */
 }
 
 /* Paragraph styling */
@@ -69,4 +72,36 @@ img {
 
 .gradle img {
   max-width: 300px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skip-link {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  align-items: start;
+  row-gap: 30px;
+}
+
+nav img {
+  width: 10%;
+}
+
+.grid img {
+  width: 100%;
 }
